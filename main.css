@@ -1,3 +1,7 @@
+body {
+  background-color: antiquewhite;
+}
+
 .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -31,6 +35,7 @@ h1 {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 .gallery-wrapper {
@@ -42,6 +47,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 30px;
 }
 .gallery-wrapper img {
   width: 20%;
