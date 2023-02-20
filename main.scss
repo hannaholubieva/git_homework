@@ -1,0 +1,29 @@
+.button {
+    display: inline-flex;
+    background-color: rgb(198, 63, 157);
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    margin: 0 auto;
+
+    &-wrapper {
+        text-align: center;
+    }
+}
+
+h1 {
+    color: rgb(198, 63, 157);
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+a {
+    cursor: pointer;
+}
