@@ -32,3 +32,17 @@ h1 {
 a {
   cursor: pointer;
 }
+
+.gallery-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery-wrapper img {
+  width: 20%;
+}
