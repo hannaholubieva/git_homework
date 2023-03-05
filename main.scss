@@ -4,18 +4,19 @@ body {
 
 .button {
     display: inline-flex;
-    background-color: rgb(198, 63, 157);
     padding: 10px 20px;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     color: white;
     margin: 0 auto;
+    
 
     &-wrapper {
         text-align: center;
     }
 }
+
 
 h1 {
     color: rgb(198, 63, 157);
@@ -44,3 +45,47 @@ a {
         width: 20%;
     }
 }
+
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: rgb(198, 63, 157);
+    transition-duration: 0.3s;
+  }
+  .hvr-shutter-out-horizontal::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: limegreen;
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    border-radius: 8px;
+  }
+  .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: rgb(198, 63, 157);
+  }
+  .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+    transform: scaleX(1);
+  }
+
+  .bw-filter {
+    filter: grayscale(100%); /* Black and white image */
+    transition: 1.5s; /* Smooth transition */
+
+    &:hover {
+        filter: none; /* Remove the filter */
+       }
+   }
+ 
+
